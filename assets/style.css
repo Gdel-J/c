@@ -32,39 +32,41 @@
 body {
     
     font-family: Arial;
-    background-color: var(--bright-color);
-    
+
 }
 
 header {
-    padding: 20px;
+    padding: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--bright-color);
     color:var(--deriv); 
     flex-wrap: wrap;
+    display: flex;
     
     
 }
 
-h1 {
-    display:inline-flex;
-    font-size: 48px;
+header h1 {
+    flex: 30%;
+    font-size: 40px;
     justify-content:start;
     background-color: var(--bright-color);
     color:var(--deriv); 
+    border: solid;
+    border-color: beige;
+    display: inline-flex;
 }
 
 
 nav {
     padding-top: 15px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    display: inline-flex;
+    display:flex;
     background-color: var(--bright-color);
     color:var(--deriv); 
-    
-    
+    flex:70% ;
+    justify-content: end;
 }
 
 
@@ -73,8 +75,7 @@ ul li {
     margin-left: 25px;
     background-color: var(--bright-color);
     color:var(--deriv); 
-    font-size:  30px; ;
-    
+    font-size:  30px; 
 }
 
 a {
@@ -82,17 +83,15 @@ a {
     text-decoration: none;
 }
 
-
-
  a:hover {
-    color:var(--dark)
+    color:var(--dark);
   }
 
 
 #hero {
     height: 250px;
     width:100%;
-    margin-bottom: 5px;
+    
     background-image: url("../assets/images/image\ nature\ .jpg");
     background-size: cover;
     background-position: center;
@@ -102,21 +101,75 @@ a {
     transition: all 0.5s ease-in-out;
 }
 #hero p {
-        position: absolute;
-        Bottom: 20px;
-        right: 50px;
-        border:solid;
-        padding:20px;
-        border-color:var(--bl);
-        background-color: var(--heroback);
-        width: 400px;
-        
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size:20px;
-        display: inline-flex;
-        
+    position:absolute;
+    Bottom: 20px;
+    right: 50px;
+    border:solid;
+    padding:20px;
+    border-color:var(--bl);
+    background-color: var(--heroback);
+    width: 350px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    display: inline-flex;
+    justify-content: center;
     }
     
 #hero p:hover {
-        box-shadow: inset 0px 0px 10px c, 0 0 20px var(--heropboxshadow);
-    }
+    box-shadow: inset 0px 0px 10px c, 0 0 20px var(--heropboxshadow);
+
+    color:var(--alice)
+}
+
+main {
+    display: flex;
+}
+
+
+  
+.aside1 {
+    flex: 30%;
+    padding:10px;
+    flex-wrap: wrap;
+    display: block;
+ 
+}
+
+.aside1 h2 {
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+#workhard {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 300px;
+    display:block;
+    
+    
+}
+
+.section1 {
+    flex: 70%;
+    padding: 10px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align:left;
+    display: block;
+}
+.section1 p {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 50px;
+    border-left: solid 5px  darkblue;
+    
+    
+
+
+}
+
+
+
