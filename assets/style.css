@@ -2,36 +2,45 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+      
 }
 
 :root {
+
+    --background1: #01579B;
+    --background2:#E1F5FE; 
     --light:lightblue;
     --bright-color:rgb(45, 104, 140) ;
     --alice:aliceblue;
-    --heliotrope:lightblue;
     --darkcyan: darkcyan;
     --for-gradient:rgb(62, 59, 124);
     --dark:darkblue; 
     --deriv:rgb(37, 37, 92);
     --heroback: rgb(62, 59, 124);
     --heropboxshadow:rgb(229, 234, 227);
-    --borderimg:rgb(37, 37, 92);
-    --landscapeimghover:rgb(71, 238, 174);
-    --landscapephover:rgb(229, 234, 227);
-    --landscbckcol:rgb(62, 59, 124);
-    --boxedhover:rgb(92,59,174);
-    --boxedbckcol:rgb(200, 237, 255);
     --cardhover:rgb(65, 30, 155);
+    --cardhover2:#84FFFF;
     --boxshadowinset:rgb(229, 227, 234);
     --footerbackgroundcolor:rgb(45, 104, 140);
     --bl:black;
     --boxedbckcol:rgb(200, 237, 255);
- }
+    --background1: #01579B;
+    --background2:#E1F5FE; 
+    --headercol: #283593;
+    --bright:#ffffff; 
+    --border:#8ac4ff;
+    --bright2:white; 
+    --purple:#7B1FA2; 
+    --cardborder:rgba(30, 157, 157, 0.544);
+    --mediaquery:#90CAF9 ; 
+    --mediaquery2: #bb8588;
+}
 
 
 body {
-    
     font-family: Arial;
+    margin: 0;
+    background-image: linear-gradient(to right,var(--background1), var(--background2))
 
 }
 
@@ -48,17 +57,16 @@ header {
 
 header h1 {
     flex: 30%;
-    font-size: 40px;
+    font-size: 45px;
     justify-content:start;
     background-color: var(--bright-color);
     color:var(--deriv); 
-    border: solid;
-    border-color: beige;
+    border: solid 5px  var(--headercol);
     display: inline-flex;
 }
 
 
-nav {
+header nav {
     padding-top: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -79,7 +87,7 @@ ul li {
 }
 
 a {
-    color: #ffffff;
+    color:var(--bright);
     text-decoration: none;
 }
 
@@ -91,22 +99,21 @@ a {
 #hero {
     height: 250px;
     width:100%;
-    
     background-image: url("../assets/images/image\ nature\ .jpg");
     background-size: cover;
     background-position: center;
     border: 4px solid var(--deriv);
     position: relative;
-    display: inline-flex;
+    display:flex;
     transition: all 0.5s ease-in-out;
 }
+
 #hero p {
     position:absolute;
     Bottom: 20px;
     right: 50px;
-    border:solid;
+    border:solid 5px var(--deriv);
     padding:20px;
-    border-color:var(--bl);
     background-color: var(--heroback);
     width: 350px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -117,76 +124,235 @@ a {
     
 #hero p:hover {
     box-shadow: inset 0px 0px 10px c, 0 0 20px var(--heropboxshadow);
-
     color:var(--alice)
 }
 
 main {
-    display:flex;
+   display: flex;
+   flex-wrap: wrap; 
 }
-
-
   
 .aside {
-    flex: 30%;
-    padding:10px;
-    flex-wrap: wrap;
-    display:block;
-    
+    flex:30%;
+    padding:20px;      
 }
 
-.aside h2 {
+#AboutMe{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 45px;
+    padding-top: 100px;  
 }
 
-
-#workhard {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 45px;
-    margin-top: 100px;
-    display: block;
-    padding:10px;
-    flex-wrap: wrap;
-}
-
-.section1 {
+.sectionmain {
     flex: 70%;
-    padding: 10px;
-    margin-left: 30px; 
-    text-align:left;
-    display:block;
-   
+    padding: 30px;
+    margin: 0px;
     flex-wrap: wrap;
+    border-left: solid 5px  var(--dark);
+    padding-left: 100px;
+    padding-bottom: 0px;
 }
 
-.section1 p {
-    
+#presentation {
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 50px;
-    border-left: solid 5px  darkblue;
-    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    padding:15px;
+    margin: 15px;
 }
 
-.Firstimage {
+
+
+#Mypicture {
+    width: 80%;
+    margin: 40px 0px 0px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: var(--border) solid   10px; 
+}
+
+#Mypicture:hover {
+    box-shadow: inset 0px 0px 8px var(--bright2), 0 0 45px  var(--bright2) ;
+}
+
+#Challenge1 {
+    width: 100%;
+    height: 70%;
+    margin: 15px;
+    margin-top: 70px; 
+    position:relative;
+    border: var(--border) solid   10px;
+}
+
+#Challenge1:hover {
+    box-shadow: inset 0px 0px 8px var(--bright2), 0 0 45px  var(--bright2) ;
+}
+
+#Myfirstwork {
+
+    position: absolute;
+    color: var(--dark);
+    padding: 5px;
+    border: solid  var(--dark) 5px ;
+    margin-top: 175px;
+    margin-left: 80px;
+ }
+
+#Myfirstwork:hover {
+    box-shadow: inset 0px 0px 8px  var(--purple), 0 0 25px  var(--purple);
+}
+
+
+.aside {
+    flex:30%;
+    padding:20px;   
+}
+
+#Work{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px; 
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.sectionmain {
+    flex: 70%;
+    padding: 30px;
+    margin: 0px;
+    flex-wrap: wrap;
+    border-left: solid 5px  var(--dark);
+    padding-left: 100px;
+    display: inline-flex;
+    padding-top: 0px;
+}
+
+.card {
     
-    width: 950px;
-    justify-content: right;
-    padding-left: 150px;
-    border-left: solid 5px  darkblue;
-    display: block;
-    
-    margin-top: 80px;
+    margin: 25px;
     position: relative;
+    border: solid;
+    border-color: var(--cardborder);
+    justify-content: space-evenly;
+    
+}
 
+.card p {
+    position: absolute;
+    color: #1A237E;
+    padding: 5px;
+    border: solid  var(--dark) 5px ;
+    margin-top: -50px;
+   
+}
+
+.card:hover{
+    box-shadow: inset 0px 0px 10px  var(--cardhover2), 0 0 20px  var(--cardhover2);
+  }
+  
+.card p:hover {
+    box-shadow: inset 0px 0px 10px var(--cardhover), 0 0 40px var(--cardhover)
+  }
+
+
+footer {
+    padding: 15px;
+    background-color: var(--bright-color);
+    color:var(--deriv); 
+    flex-wrap: wrap;
+    display: flex;
+}
+
+footer h2 {
+    flex: 30%;
+    font-size: 40px;
+    justify-content:start;
+    background-color: var(--bright-color);
+    color:var(--deriv); 
+    display: inline-flex;
+}
+
+footer nav {
+    padding-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display:flex;
+    background-color: var(--bright-color);
+    color:var(--deriv); 
+    flex:70% ;
+    justify-content: end;
+  
+}
+
+#footercontact{
+    flex: 30%;
+    font-size: 40px;
+    justify-content:start;
+    background-color: var(--bright-color);
+    color:var(--deriv); 
+    display: inline-flex;
+    
+}
+
+span[data-descr] {
+    position: relative;
+    cursor: grab;
+  }
+
+  span[data-descr]:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 0px;
+    bottom: 24px;
+    min-width: 200px;
+    border: 1px var(--heropboxshadow) solid;
+    background-color:var(--background1);
+    padding: 12px;
+    color: var(--bright);
+    font-size: 80%;
+    z-index: 1;
+  }
+
+footer li {
+    display: inline-flex;
+    margin-left: 25px;
 }
 
 
 
 
 
+@media screen and (max-width: 992px) {
+    header,main, footer {
+      background: var(--mediaquery);
+      flex-wrap: wrap;
+    }
+  }
+  
 
+  @media screen and (max-width: 768px) {
+     header, main, .card, footer{
+      background-color: var(--mediaquery2);
+      flex-wrap: wrap;
+      
+    
+  }
+  }
+  @media screen and (max-width: 576px) {
+    .card {
+      background-color: var(--border);
+      flex-wrap: wrap;
+      flex-direction: column;
+      order:2;
+      justify-content: center;
+      margin: 0;
+    
+    }
+  }
 
+ 
