@@ -1,4 +1,4 @@
-# <Portfolio Gerard  Del Vechio>
+# <Portfolio Gerard  Del Vecchio>
 
 ## Description
 
@@ -20,8 +20,6 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
 
-## Table of Contents (Optional)
-N/A
 
 ## Installation
 click on the link
@@ -42,22 +40,8 @@ My first Group project
 
 ## Credits
 
-N/A
+This is  my second challenge: my Portfolio, which will be implemented progressively by adding the latest group project, and challenges but also with the new programming languages that I will probably learn.
+I want to thanks my team members for the first project.
+I want to thanks all the teaching team in that BOOTCAMP challenge!!!
+I'll continue to learn with my classes and by mixing the differents coding sources.
 
-## License
-
-N/A
-## Badges
-
-N/A
-## Features
-
-N/A
-
-## How to Contribute
-
-
-
-## Tests
-
-N/A
