@@ -30,9 +30,14 @@ https://github.com/Gdel-J/challenge-2-Gerard-Del-Vecchio.git
 
 ## Usage
 
-A small presentation of my work
+My portfolio
 
-![challenge-2-gerard-Del-Vecchio\assets\images\screenshot.png](./assets/images/screenshot.png)  
+![screenshot](https://user-images.githubusercontent.com/120201085/231028100-f9e2846f-2f07-4385-b4c3-d102fd20043d.png)
+
+
+My first Group project
+
+![Screenshot find and stream](https://user-images.githubusercontent.com/120201085/231028438-f0f42784-2d52-4f30-8c43-9c5dba149ba4.png)
 
 
 ## Credits
