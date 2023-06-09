@@ -205,8 +205,6 @@ main {
 }
 
 
-
-
 .aside {
     flex:30%;
     padding:20px;   
@@ -252,6 +250,8 @@ main {
     margin-top: -50px;
 }
 
+
+
 #CLICK {
     position: absolute;
     color: #1A237E;
@@ -260,7 +260,17 @@ main {
     margin-top: -230px;
     font-size: 15px;
     margin-left: 350px;
-    
+
+}
+
+#CLICK2 {
+    position: absolute;
+    color: #1A237E;
+    padding: 5px;
+    border: solid  var(--dark) 5px ;
+    margin-top: -58px;
+    font-size: 15px;
+    margin-left: 350px;
 
 }
 
